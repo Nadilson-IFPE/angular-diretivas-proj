@@ -7,7 +7,7 @@
     "align": {
       "options": [
         "parameters",
-        "statements"
+        "statements",
       ]
     },
     "array-type": false,
@@ -83,7 +83,7 @@
       }
     },
     "typedef": [
-      true,
+      false,
       "call-signature"
     ],
     "typedef-whitespace": {
