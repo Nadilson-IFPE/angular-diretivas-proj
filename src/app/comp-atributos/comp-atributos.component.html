@@ -13,3 +13,12 @@
 </ul>
 
 <hr>
+
+<!-- Opção é exibida conforme isEnabledBlock em comp-atributos.component.ts for setada para um tipo booleano. -->
+<ng-template [ngIf]="isEnabledBlock">
+    <a href="#">FINALIZAR COMPRA</a>
+</ng-template>
+<br />
+<ng-template [ngIf]="true">
+    <a href="#">ADICIONAR AO CARRINHO</a>
+</ng-template>
