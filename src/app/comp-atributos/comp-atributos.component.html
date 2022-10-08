@@ -2,11 +2,16 @@
 <button (click)="trocar()">MUDAR</button>
 <h1 [ngStyle]="{'background': corFundo, 'color': corDaFonte}">CURSO ANGULAR</h1>
 
+<ng-content select="h2"></ng-content>
+<ng-content select="p"></ng-content>
+
+
 <h1>Lista de compras</h1>
 <p>Adicione um item</p>
 <input type="text" [(ngModel)]="item">
 <button (click)="adicionarLista()">ADICIONAR</button>
 <p>{{ item }}</p>
+
 
 <ul>
     <li *ngFor="let elemento of lista">{{ elemento }}</li>
@@ -22,3 +27,5 @@
 <ng-template [ngIf]="true">
     <a href="#">ADICIONAR AO CARRINHO</a>
 </ng-template>
+
+<hr>
